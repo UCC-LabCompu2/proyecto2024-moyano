@@ -1,0 +1,126 @@
+/* Estilos CSS van aquí */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cae6e3;
+}
+header{
+    background-color: #669892;
+    color: #223230;
+    padding: 10px 0;
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    float: left;
+}
+nav{
+    background-color: #223230;
+    padding: 10px 0;
+    text-align: center;
+}
+h2{
+    background-color: #4b6f6a;
+    padding: 10px 0;
+    text-align: center;
+
+}
+nav a {
+    text-decoration: none;
+    color: #cae6e3;
+    margin: 0 10px;
+}
+section {
+    padding: 20px;
+}
+.Receta {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.btn:link,.btn:visited{
+    color: #223230;
+}
+.btn:hover{
+    font-size: 1.4em;
+}
+.btn:active{
+    font-weight: bold;
+}
+.imagenReceta{
+    width: 100px;
+    float:right;
+}
+.Contenedor{
+    max-width: 500px;
+    margin: 1px auto;
+    background: #ffffff;
+}
+
+.Contenedor.checkbox ul{
+    list-style: none;
+    display: flex;
+    justify-content: normal ;
+    align-items: normal;
+    height: 30px
+;
+}
+
+.Contenedor .checkbox ul li{
+    display: inline-block;
+    margin: 1px 1px;
+}
+.Contenedor .checkbox ul li label{
+    display: inline-block;
+    background: #4aa99c;
+    border: 1px solid #4b6f6a;
+    color: #223230;
+    border-radius: 25px;
+    transition:.2s all ease;
+    padding: 5px 5px;
+}
+.Contenedor .checkbox ul li label:hover {
+    border: 3px solid #3c8d82;
+}
+.Contenedor .checkbox ul li input[type="checkbox"]:checked +label {
+border: 5px solid #07d4b0;
+    background: #00ffdb;
+    color: #020303;
+}
+
+.Contenedor .checkbox ul li input[type="checkbox"]{
+    opacity: 0;
+}
+.Lugares{
+    background: #4b6e6a;
+    float:left;
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+#mapa{
+display: flex;
+    float:right;
+    width: 40%;
+
+    background: #f1f1f1;
+
+
+}
