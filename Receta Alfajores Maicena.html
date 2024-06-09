@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta content="Milagros Moyano" name="author">
+<meta content="receta e alfajores de maicena" name="descripcion">
+<meta content="recetario,receta,inicio,menu" name="keywords">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALFAJORES DE MAICENA</title>
+<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="estilo.css">
+<script src="funciones.js"></script>
+<body id="body1">
+<section id="encabezado">
+    <header>
+        <img src="imagenes/logo.png" id="logo1" alt="El logo de la pagina">
+        <label for="busqueda">BArra de Busqueda:</label>
+        <input type="text" name="Busqueda" id="busqueda" placeholder="       Ingrese el nombre de su receta" size="50">
+        <img src="imagenes/lupa.png" id="lupa" alt="La Lupa de la barra de busqueda">
+    </header>
+    <nav id="nav1">
+        <strong>
+            <a href="index.html" id="inicio">INICIO</a>
+            <a href="busqueda.html" id="recetas">RECETARIO</a>
+
+            <a href="no%20cocino.html" id="restaurant">NO COCINO</a>
+        </strong>
+    </nav>
+</section>
+
+<section class="recetasDestacadas">
+    <img src="imagenes/cubiertos.png" class="sublogo1" alt="Imagen de unos cubiertos">
+    <h2>Receta Alfajores de maicena</h2>
+    <img src="imagenes/cubiertos.png"class="sublogo2" alt="Imagen de unos cubiertos">
+    <img src="imagenes/alfajor%20maicena.jpg" class="imagenReceta" alt="Imagen de alfajor de maicena">
+    <div class="Ingredinetes">
+
+        <h3>Ingredientes:</h3>
+        <ul class="ingrediente">
+            <li>150 g de maicena</li>
+            <li>100 g de harina 0000</li>
+            <li>80 g de azúcar</li>
+            <li>100 g de manteca</li>
+            <li>2 yemas de huevo</li>
+            <li>1 cucharadita de polvo para hornear</li>
+            <li>Esencia de vainilla</li>
+            <li>Dulce de leche</li>
+            <li>Coco rallado</li>
+        </ul>
+    </div>
+    <div class="Ingredinetes">
+
+        <div id="temporizador">
+            <input id="min" type="number" name="min" placeholder="mm"  value="00" max="120" min="0">
+            :
+            <input id="seg" type="number" name="seg" placeholder="ss" value="00" max="59" min="0">
+            <canvas id="miCanvas"  ></canvas>
+        </div>
+        <button type="button" onclick="temporizador(min.value,seg.value)"> Play</button>
+        <button type="submit" onclick="reset()">Reset</button>
+        <h3>Pasos:</h3>
+        <ol class="ingrediente">
+            <li> En un bol de su preferencia, vamos a poner la manteca (a temperatura ambiente), el azúcar y unas gotitas de esencia de vainilla. Vamos a mezclar todo hasta que esté bien incorporado. Pueden utilizar una batidora eléctrica o hacerlo a mano.</li>
+            <li>Una vez que tengamos armada una especie de pomada, vamos a agregar las dos yemas de huevo y vamos a volver a batir.</li>
+            <li>Llegó el momento de incorporar la harina y nuestra protagonista, la maicena. Si pueden hacerlo con un tamizado de por medio, mucho mejor. También vamos a agregar una pizca de polvo para hornear.</li>
+            <li>Ahora sí, vamos a meter mano en el asunto. En el bol hasta que los ingredientes secos esté bastante incorporados con los húmedos y luego vamos a continuar en la mesada hasta que nos quede una masa bien homogénea.</li>
+            <li>Vamos a dejar reposar nuestra masa unos 15 minutos aproximadamente</li>
+
+            <li>Pasado este tiempo, vamos a pasar al estirado de la masa. Para eso vamos a utilizar lo que en este canal nos gusta llamar: La técnica de los capos consiste en lo siguiente: Vamos a estirar una buena cantidad de papel film sobre la mesada. Por encima, colocamos nuestro bollo y luego por encima otra buena cantidad de papel film. Así, entre estas dos láminas, vamos a proceder a aplastar y estirar nuestra masa. Primero con las manos y luego con el palo de amasar hasta que esté bastante chatita.</li>
+            <li>Retiramos la parte de arriba del film y con un cortante redondo (también pueden usar cosas similares como un vaso) procedemos a armar nuestras tapitas y a medida que lo vamos haciendo, las vamos colocando en un recipiente para horno. Tengan mucho cuidado al manipular las tapitas porque la masa es muy sensible y se pone a llorar por cualquier cosa. Van a ver que les sobra masa, en ese caso la vuelven a juntar, a estirar y así sacan más alfajores de maicena.</li>
+            <li>Antes de llevarlas al horno y mientras este se calienta, vamos a llevar la masa a la heladera unos minutos.</li>
+            <li>Pasado este tiempo, las llevamos al horno 180º por aproximadamente 10 minutos. Tengan en cuenta que la temperatura del horno es muy importante para que no queden demasiado secos.</li>
+            <li>Una vez que vean que las tapitas e stán doraditas, las vamos a sacar. Una vez que estén frías, armamos nuestros alfajores de maicena colocando dulce de leche repostero sobre una tapita y colocando otra por encima. Si lo desean, pueden agregarle el coco rallado por al rededor. ¡Y listo!</li>
+        </ol>
+    </div>
+    <div >
+        <h3>Video de Ayuda</h3>
+        <iframe width="350" height="250" src="https://youtu.be/ATIerXeAPts?feature=shared"></iframe>
+
+    </div>
+</section>
+
+
+
+
+
+</body>
+<footer>
+    <p>Derechos de autor &copy; 2024 Recetas deliciosas. Todos los derechos reservados.</p>
+</footer>
+
+</html>

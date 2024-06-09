@@ -1,86 +1,80 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Que cocino hoy?</title>
-    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo.css">
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>¿Que cocino hoy?</title>
+        <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="estilo.css">
+        <script src="funciones.js"></script>
+    <body id="body2" >
+    <section id="encabezado">
+        <header>
 
-<body id="body2" >
-<section id="encabezado">
-    <header>
+            <img src="imagenes/logo.png" id="logo2" alt="El logo de la pagina">
+            <label for="busqueda">BArra de Busqueda:</label>
+            <input type="text" name="Busqueda" id="busqueda" placeholder="       Ingrese el nombre de su receta" size="50">
+            <img src="imagenes/lupa.png" id="lupa" alt="La Lupa de la barra de busqueda"></header>
+        <nav id="nav2">
+            <strong>
+                <a href="index.html" id="inicio">INICIO</a>
+                <a href="busqueda.html" id="recetas">RECETARIO</a>
+                <a href="no%20cocino.html" id="restaurant">NO COCINO</a>
+            </strong>
+        </nav>
+    </section>
 
-        <img src="imagenes/logo.png" id="logo2" alt="El logo de la pagina">
-        <input type="text" name="Busqueda" id="busqueda" placeholder="       Ingrese el nombre de su receta" size="50">
-        <img src="imagenes/lupa.png" id="lupa" alt="La Lupa de la barra de busqueda"></header>
-    <nav id="nav2">
-        <strong>
-            <a href="index.html" id="inicio">INICIO</a>
-            <a href="busqueda.html" id="recetas">RECETARIO</a>
-            <a href="los%20sin%20culpa.html" id="ligth">RECETAS LIGTH</a>
-            <a href="no%20cocino.html" id="restaurant">NO COCINO</a>
-        </strong>
-    </nav>
-</section>
+    <section id="bienvenida">
+        <img src="imagenes/RECETARIO.png" class="sublogo1" alt="Imagen de un recetario">
+        <h2 class="h2.2">Bienvenidos al recetario</h2>
+        <img src="imagenes/RECETARIO.png" class="sublogo2" alt="Imagen de un recetario">
 
-<section id="bienvenida">
-    <img src="imagenes/RECETARIO.png" class="sublogo1" alt="Imagen de un recetario">
-    <h2 class="h2.2">Bienvenidos al recetario</h2>
-    <img src="imagenes/RECETARIO.png" class="sublogo2" alt="Imagen de un recetario">
+        <div class="Contenedor">
+            <h2 class="h2.2"> Quiero que mi platillo tenga</h2>
+            <div class="checkbox">
+            <ul>
 
-    <div class="Contenedor">
-        <h2 class="h2.2"> Quiero que mi platillo tenga</h2>
-        <div class="checkbox">
-        <ul>
+                <li><input type="checkbox" class="filtro" value="vegana"name="vegana" id="vegana"><label for="vegana">vegana</label></li>
+                <li><input type="checkbox" class="filtro" value="sin lactio" name="sin lactios" id="sin lactios"><label for="sin lactios">sin lactios</label></li>
+                <li><input type="checkbox" class="filtro" value="sin harina" name="sin harina" id="sin harina"><label for="sin harina"> sin Harina</label></li>
+                <li><input type="checkbox" class="filtro" value="salada" name="salada" id="salada"><label for="salada">Salada</label></li>
+                <li><input type="checkbox" class="filtro" value="picante" name="picante" id="picante"><label for="picante">picante</label></li>
+                <li><input type="checkbox" class="filtro" value="con carne" name="con carne" id="con carne"><label for="con carne">con carne</label></li>
+                <li><input type="checkbox" class="filtro" value="Dulce" name="Dulce" id="Dulce"><label for="Dulce">Dulce</label></li>
+                <li><input type="checkbox" class="filtro" value="papa" name="papa" id="papa"><label for="papa">Papa</label></li>
+                <li><input type="checkbox" class="filtro" value="Vegetariana" name="Vegetariana" id="Vegetariana"><label for="Vegetariana">vegetariana</label></li>
+                <li><input type="checkbox" class="filtro" value="ligth" name="ligth" id="ligth"><label for="ligth">ligth</label></li>
+                <li><input type="checkbox" class="filtro" value="Proteica" name="Proteica" id="Proteica"><label for="Proteica">Pescado</label></li>
 
-            <li><input type="checkbox" name="huevo" id="checkbox"><label for="checkbox">Huevo</label></li>
-            <li><input type="checkbox" name="leche" id="checkbox1"><label for="checkbox1">Leche</label></li>
-            <li><input type="checkbox" name="harina" id="checkbox2"><label for="checkbox2">Harina</label></li>
-            <li><input type="checkbox" name="azucar" id="checkbox3"><label for="checkbox3">Azucar</label></li>
-            <li><input type="checkbox" name="sal" id="checkbox4"><label for="checkbox4">Sal</label></li>
-            <li><input type="checkbox" name="cebolla" id="checkbox5"><label for="checkbox5">Cebolla</label></li>
-            <li><input type="checkbox" name="tomate" id="checkbox6"><label for="checkbox6">Tomate</label></li>
-            <li><input type="checkbox" name="Maicena" id="checkbox7"><label for="checkbox7">Maicena</label></li>
-            <li><input type="checkbox" name="dulce" id="checkbox8"><label for="checkbox8">Dulce</label></li>
-            <li><input type="checkbox" name="papa" id="checkbox9"><label for="checkbox9">Papa</label></li>
-            <li><input type="checkbox" name="fruta" id="checkbox10"><label for="checkbox10">Fruta</label></li>
-            <li><input type="checkbox" name="ajo" id="checkbox11"><label for="checkbox11">Ajo</label></li>
-            <li><input type="checkbox" name="acelga" id="checkbox12"><label for="checkbox12">Acelga</label></li>
-            <li><input type="checkbox" name="frutos secos" id="checkbox13"><label for="checkbox13">Frutos Secos</label></li>
-            <li><input type="checkbox" name="Aceite" id="checkbox14"><label for="checkbox14">Aceite</label></li>
-            <li><input type="checkbox" name="pimiento" id="checkbox15"><label for="checkbox15">Pimiento</label></li>
-            <li><input type="checkbox" name="queso" id="checkbox16"><label for="checkbox16">Queso</label></li>
-            <li><input type="checkbox" name="carne" id="checkbox17"><label for="checkbox17">Carne</label></li>
-            <li><input type="checkbox" name="pasta" id="checkbox18"><label for="checkbox18">Pasta</label></li>
-            <li><input type="checkbox" name="pescado" id="checkbox19"><label for="checkbox19">Pescado</label></li>
-
-        </ul>
+            </ul>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<section class="recetasDestacadas">
-    <h2 class="h2.2" >Recetas Sugerida</h2>
-    <div class="Receta">
-        <img src="#" class="imagenReceta" alt="Imagen de futura receta">
-        <a href="#" class="btn"><h3>Nombre de la receta 1</h3></a>
-        <p>Descripción breve de la receta 1.</p>
-    </div>
-    <div class="Receta">
-        <img src="*" class="imagenReceta" alt="Imagen de futura receta">
-        <a href="*" class="btn"><h3>Nombre de la receta 2</h3></a>
+    <section class="recetasDestacadas">
+        <h2 class="h2.2" >Recetas Sugerida</h2>
+        <ul class="lista de recetas">
 
-        <p>Descripción breve de la receta 2.</p>
-    </div>
+        <ol><div data-categoria="Dulce" >
+            <img src="imagenes/alfajor%20maicena.jpg" class="imagenReceta" alt="Imagen de alfajores">
+            <a href="Receta%20Alfajores%20Maicena.html" class="btn"><h3>Alfajores de maicena</h3></a>
+            <p>Descripción breve de la receta 1.</p>
+        </div></ol>
 
-</section>
-<footer>
-    <p>Derechos de autor &copy; 2024 Recetas deliciosas. Todos los derechos reservados.</p>
-</footer>
-</body>
-</html>
+            <ol><div data-categoria="Vegetariana" >
+                <img src="imagenes/risotto-de-setas.jpg" class="imagenReceta" alt="Imagen de alfajores">
+                <a href="Receta%20Alfajores%20Maicena.html" class="btn"><h3>Risoto de setas y ricota</h3></a>
+                <p>Descripción breve de la receta 1.</p>
+            </div></ol>
+        </ul>
+
+    </section>
+    <footer>
+        <p>Derechos de autor &copy; 2024 Recetas deliciosas. Todos los derechos reservados.</p>
+    </footer>
+    </body>
+    </html>
